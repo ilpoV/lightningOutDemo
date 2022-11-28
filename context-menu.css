@@ -1,0 +1,109 @@
+.context-menu {
+  position: relative;
+  font-family: var(--font-family-medium);
+  font-weight: var(--font-weight-medium);
+}
+
+@media (min-width: 600px) {
+  .context-menu {
+    font-size: var(--t_size-5);
+  }
+}
+
+.context-menu button {
+  display: none;
+  color: inherit;
+}
+
+@media (min-width: 600px) {
+  .context-menu button {
+    display: flex;
+    padding: .5rem;
+    appearance: none;
+    background-color: var(--color-white);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .context-menu button:hover {
+    color: var(--color-link-hover);
+  }
+  .context-menu button:focus {
+    background-color: var(--color-link-active);
+    color: var(--color-white);
+  }
+  .context-menu button + .context-menu-items:active, .context-menu button:focus + .context-menu-items {
+    opacity: 1;
+    transform: none;
+    pointer-events: all;
+  }
+}
+
+.context-menu .context-menu-items {
+  display: flex;
+  gap: .5rem;
+  padding: 0;
+}
+
+@media (min-width: 600px) {
+  .context-menu .context-menu-items {
+    z-index: 9999;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    transform: translateY(-0.5rem);
+    pointer-events: none;
+    transition: opacity .15s ease, transform .15s ease;
+    background-color: var(--color-white);
+    box-shadow: var(--elevation-4-shadow);
+  }
+}
+
+.context-menu .context-menu-items a {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .375rem .5rem;
+  color: currentColor;
+  transition: background-color .1s ease, border-color .1s ease, color .1s ease;
+}
+
+@media (max-width: 599px) {
+  .context-menu .context-menu-items a {
+    border: 0.125rem solid var(--color-grad-3);
+  }
+  .context-menu .context-menu-items a [data-entity="icon"] {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .context-menu .context-menu-items a {
+    padding: 1rem 2rem 1rem 1rem;
+  }
+}
+
+.context-menu .context-menu-items a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-text-black);
+}
+
+.context-menu .context-menu-items a:active {
+  background-color: var(--color-link-active);
+  border-color: var(--color-link-active);
+  color: var(--color-white);
+}
+
+.context-menu .context-menu-item-destructive {
+  border-block-start: 0.0625rem solid var(--color-grad-5);
+}
+
+@media (max-width: 599px) {
+  .context-menu .context-menu-item-destructive {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=context-menu.css.map */
