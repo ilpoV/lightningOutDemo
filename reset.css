@@ -1,0 +1,34 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(body) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6, p, figure, ul, ol, blockquote) {
+  margin: 0;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-size: 100%;
+}
+
+:where(fieldset) {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+:where(th, td) {
+  padding: 0;
+}
+
+:where(img) {
+  display: block;
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=reset.css.map */
