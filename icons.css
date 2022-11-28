@@ -1,0 +1,330 @@
+:root {
+  --icon-attachment: url(#svgIcon-attachment);
+  --icon-calendar: url(#svgIcon-calendar);
+  --icon-cart: url(#svgIcon-cart);
+  --icon-check: url(#svgIcon-check);
+  --icon-clear: url(#svgIcon-clear);
+  --icon-close: url(#svgIcon-close);
+  --icon-collapse: url(#svgIcon-collapse);
+  --icon-consignment: url(#svgIcon-consignment);
+  --icon-contact: url(#svgIcon-contact);
+  --icon-copy-left-to-right: url(#svgIcon-copy-left-to-right);
+  --icon-copy-right-to-left: url(#svgIcon-copy-right-to-left);
+  --icon-credit-note: url(#svgIcon-credit-note);
+  --icon-csp-r1: url(#svgIcon-csp-r1);
+  --icon-csp-r2: url(#svgIcon-csp-r2);
+  --icon-csp-r3: url(#svgIcon-csp-r3);
+  --icon-device: url(#svgIcon-device);
+  --icon-discount: url(#svgIcon-discount);
+  --icon-download: url(#svgIcon-download);
+  --icon-edit-text: url(#svgIcon-edit-text);
+  --icon-email: url(#svgIcon-email);
+  --icon-expand: url(#svgIcon-expand);
+  --icon-file-format: url(#svgIcon-file-format);
+  --icon-file-size: url(#svgIcon-file-size);
+  --icon-genie2: url(#svgIcon-genie2);
+  --icon-grid: url(#svgIcon-grid);
+  --icon-hamburger: url(#svgIcon-hamburger);
+  --icon-home: url(#svgIcon-home);
+  --icon-info: url(#svgIcon-info);
+  --icon-invoice: url(#svgIcon-invoice);
+  --icon-language: url(#svgIcon-language);
+  --icon-link: url(#svgIcon-link);
+  --icon-list: url(#svgIcon-list);
+  --icon-log-out: url(#svgIcon-log-out);
+  --icon-logo-zoom: url(#svgIcon-logo-zoom);
+  --icon-minus-hq: url(#svgIcon-minus-hq);
+  --icon-minus: url(#svgIcon-minus);
+  --icon-more: url(#svgIcon-more);
+  --icon-new-window: url(#svgIcon-new-window);
+  --icon-news: url(#svgIcon-news);
+  --icon-no-service: url(#svgIcon-no-service);
+  --icon-order: url(#svgIcon-order);
+  --icon-patient-add: url(#svgIcon-patient-add);
+  --icon-patient: url(#svgIcon-patient);
+  --icon-plus: url(#svgIcon-plus);
+  --icon-products: url(#svgIcon-products);
+  --icon-search: url(#svgIcon-search);
+  --icon-send: url(#svgIcon-send);
+  --icon-sort-arrow: url(#svgIcon-sort-arrow);
+  --icon-spinner: url(#svgIcon-spinner);
+  --icon-status: url(#svgIcon-status);
+  --icon-store: url(#svgIcon-store);
+  --icon-time: url(#svgIcon-time);
+  --icon-trash-can: url(#svgIcon-trash-can);
+  --icon-user-edit: url(#svgIcon-user-edit);
+  --icon-user: url(#svgIcon-user);
+  --icon-variants: url(#svgIcon-variants);
+  --icon-video-duration: url(#svgIcon-video-duration);
+  --icon-video: url(#svgIcon-video);
+  --icon-warning: url(#svgIcon-warning);
+}
+
+[data-entity="icon"] {
+  --_icon-mask: initial;
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+  vertical-align: middle;
+  pointer-events: none;
+}
+
+[data-entity="icon"][data-variant] {
+  background-color: currentColor;
+  clip-path: var(--_icon-mask);
+}
+
+[data-entity="icon"][data-variant="attachment"] {
+  --_icon-mask: var(--icon-attachment);
+}
+
+[data-entity="icon"][data-variant="calendar"] {
+  --_icon-mask: var(--icon-calendar);
+}
+
+[data-entity="icon"][data-variant="cart"] {
+  --_icon-mask: var(--icon-cart);
+}
+
+[data-entity="icon"][data-variant="check"] {
+  --_icon-mask: var(--icon-check);
+}
+
+[data-entity="icon"][data-variant="clear"] {
+  --_icon-mask: var(--icon-clear);
+}
+
+[data-entity="icon"][data-variant="close"] {
+  --_icon-mask: var(--icon-close);
+}
+
+[data-entity="icon"][data-variant="collapse"] {
+  --_icon-mask: var(--icon-collapse);
+}
+
+[data-entity="icon"][data-variant="consignment"] {
+  --_icon-mask: var(--icon-consignment);
+}
+
+[data-entity="icon"][data-variant="contact"] {
+  --_icon-mask: var(--icon-contact);
+}
+
+[data-entity="icon"][data-variant="copy-left-to-right"] {
+  --_icon-mask: var(--icon-copy-left-to-right);
+}
+
+[data-entity="icon"][data-variant="copy-right-to-left"] {
+  --_icon-mask: var(--icon-copy-right-to-left);
+}
+
+[data-entity="icon"][data-variant="credit-note"] {
+  --_icon-mask: var(--icon-credit-note);
+}
+
+[data-entity="icon"][data-variant="csp-r1"] {
+  --_icon-mask: var(--icon-csp-r1);
+}
+
+[data-entity="icon"][data-variant="csp-r2"] {
+  --_icon-mask: var(--icon-csp-r2);
+}
+
+[data-entity="icon"][data-variant="csp-r3"] {
+  --_icon-mask: var(--icon-csp-r3);
+}
+
+[data-entity="icon"][data-variant="device"] {
+  --_icon-mask: var(--icon-device);
+}
+
+[data-entity="icon"][data-variant="discount"] {
+  --_icon-mask: var(--icon-discount);
+}
+
+[data-entity="icon"][data-variant="download"] {
+  --_icon-mask: var(--icon-download);
+}
+
+[data-entity="icon"][data-variant="edit-text"] {
+  --_icon-mask: var(--icon-edit-text);
+}
+
+[data-entity="icon"][data-variant="email"] {
+  --_icon-mask: var(--icon-email);
+}
+
+[data-entity="icon"][data-variant="expand"] {
+  --_icon-mask: var(--icon-expand);
+}
+
+[data-entity="icon"][data-variant="file-format"] {
+  --_icon-mask: var(--icon-file-format);
+}
+
+[data-entity="icon"][data-variant="file-size"] {
+  --_icon-mask: var(--icon-file-size);
+}
+
+[data-entity="icon"][data-variant="genie2"] {
+  --_icon-mask: var(--icon-genie2);
+}
+
+[data-entity="icon"][data-variant="grid"] {
+  --_icon-mask: var(--icon-grid);
+}
+
+[data-entity="icon"][data-variant="hamburger"] {
+  --_icon-mask: var(--icon-hamburger);
+}
+
+[data-entity="icon"][data-variant="home"] {
+  --_icon-mask: var(--icon-home);
+}
+
+[data-entity="icon"][data-variant="info"] {
+  --_icon-mask: var(--icon-info);
+}
+
+[data-entity="icon"][data-variant="invoice"] {
+  --_icon-mask: var(--icon-invoice);
+}
+
+[data-entity="icon"][data-variant="language"] {
+  --_icon-mask: var(--icon-language);
+}
+
+[data-entity="icon"][data-variant="link"] {
+  --_icon-mask: var(--icon-link);
+}
+
+[data-entity="icon"][data-variant="list"] {
+  --_icon-mask: var(--icon-list);
+}
+
+[data-entity="icon"][data-variant="log-out"] {
+  --_icon-mask: var(--icon-log-out);
+}
+
+[data-entity="icon"][data-variant="logo-zoom"] {
+  --_icon-mask: var(--icon-logo-zoom);
+}
+
+[data-entity="icon"][data-variant="minus-hq"] {
+  --_icon-mask: var(--icon-minus-hq);
+}
+
+[data-entity="icon"][data-variant="minus"] {
+  --_icon-mask: var(--icon-minus);
+}
+
+[data-entity="icon"][data-variant="more"] {
+  --_icon-mask: var(--icon-more);
+}
+
+[data-entity="icon"][data-variant="new-window"] {
+  --_icon-mask: var(--icon-new-window);
+}
+
+[data-entity="icon"][data-variant="news"] {
+  --_icon-mask: var(--icon-news);
+}
+
+[data-entity="icon"][data-variant="no-service"] {
+  --_icon-mask: var(--icon-no-service);
+}
+
+[data-entity="icon"][data-variant="order"] {
+  --_icon-mask: var(--icon-order);
+}
+
+[data-entity="icon"][data-variant="patient-add"] {
+  --_icon-mask: var(--icon-patient-add);
+}
+
+[data-entity="icon"][data-variant="patient"] {
+  --_icon-mask: var(--icon-patient);
+}
+
+[data-entity="icon"][data-variant="plus"] {
+  --_icon-mask: var(--icon-plus);
+}
+
+[data-entity="icon"][data-variant="products"] {
+  --_icon-mask: var(--icon-products);
+}
+
+[data-entity="icon"][data-variant="search"] {
+  --_icon-mask: var(--icon-search);
+}
+
+[data-entity="icon"][data-variant="send"] {
+  --_icon-mask: var(--icon-send);
+}
+
+[data-entity="icon"][data-variant="sort-arrow"] {
+  --_icon-mask: var(--icon-sort-arrow);
+}
+
+[data-entity="icon"][data-variant="spinner"] {
+  --_icon-mask: var(--icon-spinner);
+}
+
+[data-entity="icon"][data-variant="status"] {
+  --_icon-mask: var(--icon-status);
+}
+
+[data-entity="icon"][data-variant="store"] {
+  --_icon-mask: var(--icon-store);
+}
+
+[data-entity="icon"][data-variant="time"] {
+  --_icon-mask: var(--icon-time);
+}
+
+[data-entity="icon"][data-variant="trash-can"] {
+  --_icon-mask: var(--icon-trash-can);
+}
+
+[data-entity="icon"][data-variant="user-edit"] {
+  --_icon-mask: var(--icon-user-edit);
+}
+
+[data-entity="icon"][data-variant="user"] {
+  --_icon-mask: var(--icon-user);
+}
+
+[data-entity="icon"][data-variant="variants"] {
+  --_icon-mask: var(--icon-variants);
+}
+
+[data-entity="icon"][data-variant="video-duration"] {
+  --_icon-mask: var(--icon-video-duration);
+}
+
+[data-entity="icon"][data-variant="video"] {
+  --_icon-mask: var(--icon-video);
+}
+
+[data-entity="icon"][data-variant="warning"] {
+  --_icon-mask: var(--icon-warning);
+}
+
+[data-entity="icon"][data-variant="logo-zoom"] {
+  color: #008cff;
+}
+
+[data-entity="action-icon"] {
+  display: inline-flex;
+  padding: .5rem;
+  background-color: var(--color-white);
+  color: currentColor;
+  border-radius: 9999rem;
+}
+
+[data-entity="action-icon"]:hover {
+  color: var(--color-link-hover);
+}
+
+/*# sourceMappingURL=icons.css.map */
