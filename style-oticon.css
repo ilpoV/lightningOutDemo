@@ -1,0 +1,244 @@
+#site-heading {
+  z-index: 99;
+  top: 0;
+  background-color: var(--color-white);
+  box-shadow: 0 0.375rem 0.25rem -0.1rem rgba(0, 0, 0, 0.1);
+  line-height: 1;
+}
+
+@media (min-width: 900px) {
+  #site-heading {
+    display: block;
+  }
+  #site-heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 3.25rem;
+    background-color: var(--color-grad-7);
+    border-bottom: 0.0625rem solid var(--color-grad-5);
+  }
+  #site-heading.scrolled {
+    position: sticky;
+    transform: translateY(var(--sticky-header-offset, 0));
+  }
+}
+
+.site-footer {
+  margin: 0 1rem;
+  padding: 1rem 0 1.75rem;
+  background-color: var(--color-black);
+  box-shadow: -50vw 0 0 var(--color-black), 50vw 0 0 var(--color-black);
+  color: var(--color-grad-4);
+}
+
+@media (min-width: 900px) {
+  .site-footer {
+    width: 74rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+:where(.site-navigation) {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 0 1rem;
+  color: var(--color-text-supplementary);
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) {
+    flex-direction: column;
+    width: 74rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+:where(.site-navigation) [data-function="visibility-toggle-label"] {
+  --_hamburger-width: 2rem;
+  --_hamburger-height: .125rem;
+  --_hamburger-color: currentColor;
+  display: flex;
+  position: absolute;
+  top: .25rem;
+  right: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-image: linear-gradient(0deg, transparent calc(50% - var(--_hamburger-height)/2), var(--_hamburger-color) 0%, var(--_hamburger-color) calc(50% + var(--_hamburger-height)/2), transparent 0%);
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) [data-function="visibility-toggle-label"] {
+    display: none;
+  }
+}
+
+:where(.site-navigation) [data-function="visibility-toggle-label"]::before, :where(.site-navigation) [data-function="visibility-toggle-label"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: var(--_hamburger-width);
+  height: var(--_hamburger-height);
+  background-color: var(--_hamburger-color);
+}
+
+:where(.site-navigation) [data-function="visibility-toggle-label"]::before {
+  transform: translateX(-50%) translateY(calc(-50% - var(--_hamburger-height)*5));
+}
+
+:where(.site-navigation) [data-function="visibility-toggle-label"]::after {
+  transform: translateX(-50%) translateY(calc(-50% + var(--_hamburger-height)*5));
+}
+
+:where(.site-navigation) > ul {
+  display: flex;
+}
+
+:where(.site-navigation) > ul > li {
+  display: none;
+  align-items: center;
+}
+
+:where(.site-navigation) > ul > li.home-link, :where(.site-navigation) > ul > li.login-spot, :where(.site-navigation) > ul > li.cart-spot {
+  flex-basis: initial;
+  display: flex;
+}
+
+:where(.site-navigation) > ul > li.cart-spot {
+  margin-right: 3.5rem;
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) > ul > li.cart-spot {
+    margin-right: 0;
+  }
+}
+
+:where(.site-navigation) > ul > li.home-link {
+  padding: 0;
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) > ul > li {
+    display: flex;
+    position: relative;
+    padding: 0 1.25rem;
+  }
+}
+
+:where(.site-navigation) li.home-link {
+  align-items: center;
+  position: absolute;
+  top: .75rem;
+  left: 50%;
+  margin-right: auto;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) li.home-link {
+    position: static;
+    transform: none;
+  }
+}
+
+:where(.site-navigation) li.home-link a {
+  width: 6.5rem;
+  height: 1.75rem;
+  background-image: url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/img/logo-oticon.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  color: transparent;
+  overflow: hidden;
+}
+
+:where(.site-navigation) li.cart-spot {
+  margin-left: auto;
+}
+
+:where(.site-navigation) a:hover, :where(.site-navigation) a.selected-page {
+  color: var(--color-text-primary);
+}
+
+:where(.site-navigation) .site-navigation-level-1 {
+  justify-content: flex-end;
+  min-height: 3.25rem;
+  font-size: var(--t_size-6);
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) .site-navigation-level-1 {
+    position: relative;
+  }
+}
+
+:where(.site-navigation) .site-navigation-level-1 > li:last-child {
+  padding-right: 0;
+}
+
+:where(.site-navigation) .site-navigation-level-1 > li.selected-page {
+  background-color: var(--color-white);
+  border-left: 0.0625rem solid var(--color-grad-5);
+  border-right: 0.0625rem solid var(--color-grad-5);
+  color: var(--color-text-primary);
+}
+
+:where(.site-navigation) .site-navigation-level-1 > li > a {
+  display: flex;
+  align-items: center;
+}
+
+:where(.site-navigation) .site-navigation-level-2 {
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+  font-family: var(--font-family-light);
+  font-weight: var(--font-weight-light);
+  font-size: var(--t_size-4);
+  text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+  :where(.site-navigation) .site-navigation-level-2 {
+    min-height: 5rem;
+  }
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li {
+  flex-basis: 5rem;
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li:first-child {
+  margin-left: auto;
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li:last-child {
+  padding-right: 0;
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li > a::after {
+  content: "";
+  width: 2.5rem;
+  margin-block-start: .5rem;
+  border-bottom: 0.125rem solid var(--color-link-hover);
+  transition: transform .1s ease;
+  transform: scaleX(0);
+}
+
+:where(.site-navigation) .site-navigation-level-2 > li > a:hover::after, :where(.site-navigation) .site-navigation-level-2 > li > a.selected-page::after {
+  transform: scaleX(1);
+}
+
+/*# sourceMappingURL=style-oticon.css.map */
