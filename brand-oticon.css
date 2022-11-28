@@ -1,0 +1,117 @@
+@font-face {
+  font-family: 'Soho Gothic W02 Light';
+  src: url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Light.woff2") format("woff2"), url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Light.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soho Gothic W02 Regular';
+  src: url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Regular.woff2") format("woff2"), url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Regular.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soho Gothic W02 Medium';
+  src: url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Medium.woff2") format("woff2"), url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Medium.woff2") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Soho Gothic W02 Bold';
+  src: url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Bold.woff2") format("woff2"), url("/prototypes/X_uz-2m9qCVt/oticon/marketing-audiology/b/assets/font/SohoGothicW02-Bold.woff2") format("woff");
+  font-display: swap;
+}
+
+[data-brand="oticon"]:root {
+  --font-family-main: "Soho Gothic W02 Regular";
+  --font-family-supplementary: var(--font-family-main);
+  --font-family-light: "Soho Gothic W02 Light";
+  --font-family-medium: "Soho Gothic W02 Medium";
+  --font-family-bold: "Soho Gothic W02 Bold";
+  --font-family-input: var(--font-family-main);
+  --font-weight-light: 400;
+  --font-weight-regular: 400;
+  --font-weight-medium: 400;
+  --font-weight-bold: 400;
+  --color-brand-primary: hsl(319deg 80% 43%);
+  --color-brand-supplementary: hsl(38deg 34% 43%);
+  --color-brand-accent-1: hsl(200deg 80% 35%);
+  --color-brand-accent-2: hsl(319deg 80% 43%);
+  /*
+        Theme colors
+    */
+  --color-text-primary: hsl(210deg 2% 24%);
+  --color-text-supplementary: hsl(15deg 2% 42%);
+  --color-text-faded: hsl(0deg 0% 54%);
+  --color-text-black: hsl(240deg 2% 10%);
+  --color-link-default: hsl(320deg 50% 40%);
+  --color-link-hover: hsl(320deg 80% 45%);
+  --color-link-active: hsl(320deg 80% 45%);
+  --color-link-soft-hover: hsl(320deg 65% 95%);
+  --color-grad-1: hsl(240deg 2% 10%);
+  --color-grad-2: hsl(210deg 2% 24%);
+  --color-grad-3: hsl(15deg 2% 41%);
+  --color-grad-4: hsl(30deg 2% 58%);
+  --color-grad-5: hsl(43deg 6% 78%);
+  --color-grad-6: hsl(34deg 13% 90%);
+  --color-grad-7: hsl(45deg 15% 95%);
+  --color-alert: hsl(15deg 100% 46%);
+  --color-success: hsl(110deg 70% 40%);
+  --color-thead-bg: var(--color-grad-3);
+  --color-thead-text: var(--color-white);
+  --color-thead-row-separator: var(--color-grad-5);
+  --color-tbody-bg: var(--color-white);
+  --color-tbody-row-separator: var(--color-grad-5);
+  --font-family-thead: var(--font-family-main);
+  --font-weight-thead: var(--font-weight-main);
+  --color-status-new: hsl(0deg 0% 75%);
+  --color-status-confirmed: hsl(45deg 100% 50%);
+  --color-status-in-progress: hsl(140 85% 45%);
+  --color-status-shipped: hsl(150deg 85% 30%);
+  --color-status-partially-shipped: hsl(150deg 85% 30%);
+  --color-status-invoiced: hsl(200deg 90% 50%);
+  --color-status-partially-invoiced: hsl(200deg 90% 50%);
+  --color-status-reserved: hsl(45deg 100% 50%);
+  --color-status-on-hold: hsl(10deg 95% 50%);
+  --color-status-cancelled: hsl(0deg 0% 85%);
+  --card-border-radius: .25rem;
+  --card-shadow-default: 0 .25rem .0625rem -.1875rem rgba(0, 0, 0, .1);
+  --card-shadow-hover: 0 .375rem .25rem -.25rem rgba(0, 0, 0, .2), 0 .0625rem .125rem -.0625rem rgba(0, 0, 0, .4);
+  --color-background-form: var(--color-grad-7);
+  --button-border-width: .125rem;
+  --color-button-tertiary-bg: transparent;
+  --color-button-tertiary-text: var(--color-grad-2);
+  --color-button-tertiary-border: var(--color-grad-2);
+  --color-button-tertiary-bg-hover: var(--color-link-active);
+  --color-button-tertiary-text-hover: var(--color-white);
+  --color-button-tertiary-border-hover: var(--color-link-active);
+  --color-button-tertiary-bg-active: var(--color-link-active);
+  --color-button-tertiary-text-active: var(--color-white);
+  --color-button-tertiary-border-active: var(--color-link-active);
+  --content-default-width: 74rem;
+  --content-max-width: 90%;
+  --content-right-padding: 0;
+  --content-left-padding: 0;
+  --navigation-background-color: var(--color-white);
+  --navigation-text-color: var(--color-text-primary, inherit);
+  --navigation-border-width: .0625rem;
+  --navigation-border-style: solid;
+  --navigation-border-color: var(--color-grad-4);
+  --navigation-border-radius: 0;
+  --navigation-shadow: none;
+  --navigation-font-family: var(--font-family-main);
+  --navigation-font-weight: var(--font-weight-main);
+  --navigation-font-size: var(--t_size-5);
+  --navigation-selected-background-color: hsl(0 0% 0% / .1);
+  --navigation-selected-text-color: var(--color-text-black);
+  --navigation-selected-font-family: var(--navigation-font-family);
+  /*
+    --navigation-hover-background-color: ;
+    --navigation-hover-text-color: ;
+    --navigation-selected-background-color: ;
+    */
+  --navigation-selected-font-family: var(--font-family-bold);
+  --navigation-selected-font-weight: var(--font-weight-bold);
+}
+
+/*# sourceMappingURL=brand-oticon.css.map */
