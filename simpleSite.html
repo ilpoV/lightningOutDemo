@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <script src="https://demant4--poc.sandbox.my.site.com/lightning/lightning.out.js"></script>
+
+  <div data-lightning-out="true"></div>
+
+  <script>
+
+                    const appName = 'c:lightningOutDemoWrapper';
+                    const componentName = 'c:lightningOutAwesomeDemo';
+                    const lightningEndpoint = 'https://demant4--poc.sandbox.my.site.com';
+                    const targetElement = document.querySelector("[data-lightning-out]");
+                    const componentAttributes = {
+                    };
+
+                    $Lightning.use(
+                            appName,
+                            function (){
+                              $Lightning.createComponent(
+                                      componentName,
+                                      componentAttributes,
+                                      targetElement,
+                                      function (cmp){
+                                        console.log('lightning component created');
+                                      }
+                              );
+                            },
+                            lightningEndpoint
+                    );
+
+
+            </script>
+  <!-- End of Lighting out component -->
+</html>
